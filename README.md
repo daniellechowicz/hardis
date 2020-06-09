@@ -26,7 +26,13 @@ Applied detailed cutting force analysis based on Girardin, F., et al. (2010): *H
 
 ```
 py -3 -m venv .venv
-``
+```
+```
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+```
+```
+.venv\Scripts\activate.ps1
+```
 
 ## Issues related to data acquisition and file format
 1. As the modal tests were performed at a sampling rate of 100 000 Hz, the sampling rate of the measurement files must be the same (i.e. 100 000 Hz)
