@@ -21,7 +21,10 @@ Applied detailed cutting force analysis based on Girardin, F., et al. (2010): *H
 </p>
 
 4. Clone or download the content of the repository
-5. Extract **cutting-force-analysis-web-master.zip** and open the folder
+5. Extract **hardis-master.zip** and open the folder
+``
+asd
+``
 
 ## Issues related to data acquisition and file format
 1. As the modal tests were performed at a sampling rate of 100 000 Hz, the sampling rate of the measurement files must be the same (i.e. 100 000 Hz)
