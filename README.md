@@ -22,7 +22,7 @@ Applied detailed cutting force analysis based on Girardin, F., et al. (2010): *H
 
 4. Clone or download the content of the repository
 5. Extract **hardis-master.zip** and open the folder
-6. Open the command prompt in the folder you extracted and execute the following commands:
+6. Open the command prompt in the folder you extracted and execute the following commands, respectively:
 
 ```
 py -3 -m venv .venv
@@ -30,8 +30,16 @@ py -3 -m venv .venv
 ```
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 ```
+7. To run the virtual environment you just created, execute one of these commands:
 ```
 .venv\Scripts\activate.ps1
+```
+```
+.venv\Scripts\activate.ps1
+```
+8. For the application to work properly, install the required modules:
+```
+pip install -r requirements.txt
 ```
 
 ## Issues related to data acquisition and file format
