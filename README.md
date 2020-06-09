@@ -30,16 +30,27 @@ py -3 -m venv .venv
 ```
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
 ```
-7. To run the virtual environment you just created, execute one of these commands:
 ```
 .venv\Scripts\activate.ps1
 ```
+or
 ```
-.venv\Scripts\activate.ps1
+.venv\Scripts\activate
 ```
 8. For the application to work properly, install the required modules:
 ```
 pip install -r requirements.txt
+```
+9. If the above steps have been correctly performed, the software is ready to use
+
+## How to use the software?
+1. Open the command prompt in the folder you extracted and execute the following command to get the instructions:
+```
+python run.py --help
+```
+2. For instance, the following example illustrates how the software can be used:
+```
+python run.py -p "your\absolute\folder\path" -ch 2 -fs 100000
 ```
 
 ## Issues related to data acquisition and file format
@@ -47,7 +58,4 @@ pip install -r requirements.txt
 2. The format of the measurement files must be **.txt**
 3. Columns must be separated with semicolons
 4. Nor headers neither comments are allowed
-5. Before running the software, you will be requested to enter the column number (remember that the numbering in Python starts with 0)
-
-## What needs to be done?
-The software was adapted to the test setup designed by *Kompetenzzentrum Holz GmbH*. In order for the software to function properly, it is necessary to carry out modal tests of the test setup with the relevant parameters as specified in the "Issues related to data acquisition and file format" section. Depending on your interest in further development of the application, an upgrade of this software will be carried out.
+5. Before running the software, you need to specify channel corresponding to Y axis (remember that the numbering in Python starts with 0)
