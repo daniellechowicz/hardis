@@ -48,7 +48,7 @@ pip install -r requirements.txt
 ```
 python run.py --help
 ```
-2. For instance, the following example illustrates how the software can be used:
+2. The following example illustrates how the software can be used:
 ```
 python run.py -p "your\absolute\folder\path" -ch 2 -fs 100000
 ```
